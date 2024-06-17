@@ -1,0 +1,10 @@
+.link {
+    border: 3px solid;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-right: 10px;
+    color: rgba(34, 113, 209, 1);
+    background-color: rgba(0, 0, 0, 0.9);
+
+}
