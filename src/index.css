@@ -1,8 +1,14 @@
+:root {
+  --fonte: 'Roboto', sans-serif;
+  --corDeFundo: rgba(0, 0, 0, 0.9);
+  --corBtBranco: rgba(255, 255, 255, 1);
+  --corBtAzul: rgba(34, 113, 209, 1);
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: var(--fonte);
+  background-color: var(--corDeFundo);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
