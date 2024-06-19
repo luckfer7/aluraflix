@@ -1,0 +1,49 @@
+.background {
+    display: flex;
+    justify-content: center;
+    border: 4px rgba(107, 209, 255, 1);
+    padding: 150px 0 20px;
+    background-image: url("./player-fundo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(0.25) opacity(0.75);    
+}
+
+.container {
+    display: flex;
+    height: 333px;
+    gap: 70px;
+}
+
+.containerTexts {
+}
+
+.TitleCategory {
+    color: rgba(245, 245, 245, 1);
+    background-color: rgba(107, 209, 255, 1);
+    border-radius: 15px;
+    padding: 10px;
+    font-family: var(--fonte);
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 56.25px;
+
+}
+
+.Title {
+    color: rgba(245, 245, 245, 1);
+    font-family: var(--fonte);
+    font-size: 46px;
+    font-weight: 400;
+    line-height: 53.91px;
+}
+
+.text {
+    width: 662px;
+    color: rgba(245, 245, 245, 1);
+    font-family: var(--fonte);
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21.09px;
+
+}
