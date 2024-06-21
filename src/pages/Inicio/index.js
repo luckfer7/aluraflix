@@ -7,14 +7,11 @@ import Card from 'components/Card';
 function Inicio() {
     return (
         <>
-            <Header />
             <Banner />
             <main className={styles.main}>
                 
                
             </main>
-            
-            <Rodape />
         </>
         
     )
