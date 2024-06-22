@@ -1,13 +1,19 @@
 import styles from './NovoVideo.module.css';
 
 function NovoVideo () {
+
+    function Guardar (evento) {
+        evento.preventDefault()
+        alert("vídeo adicionado")
+    }
+
     return (
         <section className={styles.secao}>
 
             <h1>NOVO VÍDEO</h1>
             <h4>COMPLETE O FORMULARIO PARA CRIAR UM NOVO CARD DE VÍDEO</h4>
 
-            <form className={styles.formContainer}>
+            <form className={styles.formContainer} onSubmit={Guardar}>
                 <h2>Criar Card</h2>
 
                 <div className={styles.containerInput}>
@@ -18,7 +24,12 @@ function NovoVideo () {
                     
                     <div>
                        <label>Categoria</label>
-                        <select placeholder='Selecione uma categoria' /> 
+                        <select required>
+                            <option>Selecione uma categoria</option>
+                             <option>Front-end</option>
+                             <option>Back-end</option>
+                             <option>Mobile</option>
+                        </select>
                     </div>
                     
                 </div>
@@ -26,7 +37,7 @@ function NovoVideo () {
                 <div className={styles.containerInput}>
                     <div>
                         <label>Imagem</label>
-                        <input placeholder='Cole o link da imagem' />
+                        <input  placeholder='Cole o link da imagem' />
                     </div>
                     
                     <div>
@@ -37,7 +48,7 @@ function NovoVideo () {
 
                 <div className={styles.containerInput__separate}>
                     <label>Descrição</label>
-                    <input placeholder='Sobre o que é esse vídeo?' />
+                    <input  placeholder='Sobre o que é esse vídeo?' />
                 </div>
 
                 <div className={styles.btnArea}>

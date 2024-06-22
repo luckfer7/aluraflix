@@ -1,3 +1,5 @@
+
+
 .card {
     width: 432px;
     height: 325px;
@@ -10,16 +12,17 @@
     height: 70%;
 }
 
-.btns {
+.btnsContainer {
     width: 100%;
-    /* height: 30%; */
+    height: 30%;
     display: flex;
     justify-content: center;
     gap: 70px;
     padding: 40px 0;
+    
 }
 
-.btns button {
+.btns {
     color: rgba(255, 255, 255, 1);
     font-family: var(--fonte);
     font-weight: 800;
