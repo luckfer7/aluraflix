@@ -1,10 +1,41 @@
+import { useState } from 'react';
 import styles from './NovoVideo.module.css';
 
-function NovoVideo () {
+function NovoVideo (props) {
+
+    const [titulo, setTitulo] = useState('')
+    const [valor, setValor] = useState('')
+    const [imagem, setImagem] = useState('')
+    const [categoria, setCategoria] = useState('')
 
     function Guardar (evento) {
         evento.preventDefault()
-        alert("vídeo adicionado")
+        props.videoAdicionado ({
+            titulo,
+            valor,
+            imagem,
+            categoria 
+        })
+        console.log("vídeo adicionado", titulo, valor, imagem, categoria)
+
+    }
+
+
+    function temTexto (evento) {
+        setValor (evento.target.value)
+        
+    }
+
+    function temTextoTitulo (evento) {
+        setTitulo (evento.target.value)
+    }
+
+    function temTextoImagem (evento) {
+        setImagem (evento.target.value)
+    }
+
+    function temCategoria (evento) {
+        setCategoria (evento.target.value)
     }
 
     return (
@@ -19,12 +50,12 @@ function NovoVideo () {
                 <div className={styles.containerInput}>
                     <div>
                         <label>Título</label>
-                        <input placeholder='Digite o titulo' />
+                        <input value={titulo} onChange={temTextoTitulo} placeholder='Digite o titulo' />
                     </div>
                     
                     <div>
                        <label>Categoria</label>
-                        <select required>
+                        <select onChange={temCategoria} required>
                             <option>Selecione uma categoria</option>
                              <option>Front-end</option>
                              <option>Back-end</option>
@@ -37,12 +68,12 @@ function NovoVideo () {
                 <div className={styles.containerInput}>
                     <div>
                         <label>Imagem</label>
-                        <input  placeholder='Cole o link da imagem' />
+                        <input onChange={temTextoImagem} placeholder='Cole o link da imagem' />
                     </div>
                     
                     <div>
                         <label>Vídeo</label>
-                        <input  placeholder='Digite o link do vídeo' />
+                        <input value={valor} onChange={temTexto} placeholder='Digite o link do vídeo' />
                     </div>
                 </div>
 
