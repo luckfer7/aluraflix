@@ -8,7 +8,7 @@ function NovoVideo () {
     const [imagem, setImagem] = useState('')
     const [categoria, setCategoria] = useState('')
 
-    function Guardar (evento) {
+    async function Guardar (evento) {
         evento.preventDefault()
         const paraObj = {
             titulo,
@@ -18,7 +18,7 @@ function NovoVideo () {
         }
         console.log(paraObj)
 
-        fetch("http://localhost:3000/0",{
+        await fetch("http://localhost:3001/videos",{
             method: "POST",
             headers: {"Content-Type":"application/json"},
             body: JSON.stringify(paraObj)

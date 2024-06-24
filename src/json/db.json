@@ -1,10 +1,17 @@
-[
+{
+  "videos": [
     {
-        "id": 1,
-        "titulo": "O labirinto do Logcat",
-        "imagem": "https://cdn3.gnarususercontent.com.br/2802-react-praticando/img2.png",
-        "link": "https://www.youtube.com/embed/ypvGqZGJBls"
+      "id": "1",
+      "titulo": "O labirinto do Logcat",
+      "imagem": "https://cdn3.gnarususercontent.com.br/2802-react-praticando/img2.png",
+      "link": "https://www.youtube.com/embed/ypvGqZGJBls"
+    },
+    {
+      "id": "448c",
+      "titulo": "duhauhdu",
+      "valor": "nasudus",
+      "imagem": "nsdnuasus",
+      "categoria": "Front-end"
     }
-]
-
-
+  ]
+}
