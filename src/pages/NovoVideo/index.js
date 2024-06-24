@@ -1,7 +1,7 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from './NovoVideo.module.css';
 
-function NovoVideo (props) {
+function NovoVideo () {
 
     const [titulo, setTitulo] = useState('')
     const [valor, setValor] = useState('')
@@ -10,13 +10,23 @@ function NovoVideo (props) {
 
     function Guardar (evento) {
         evento.preventDefault()
-        props.videoAdicionado ({
+        const paraObj = {
             titulo,
             valor,
             imagem,
             categoria 
+        }
+        console.log(paraObj)
+
+        fetch("http://localhost:3000/0",{
+            method: "POST",
+            headers: {"Content-Type":"application/json"},
+            body: JSON.stringify(paraObj)
+        }).then(response => response.json()).then(data => {
+            console.log("video adicionado ao json", data);
+        }).catch((err)=> {
+            console.log(err)
         })
-        console.log("vídeo adicionado", titulo, valor, imagem, categoria)
 
     }
 
@@ -38,6 +48,18 @@ function NovoVideo (props) {
         setCategoria (evento.target.value)
     }
 
+    // useEffect(() => {
+    //     const guardarVideo = {
+    //         method: 'POST',
+    //         headers: {'Content-Type': 'application/json'},
+    //         body: JSON.stringify({
+    //             titulo,
+    //             valor,
+    //             imagem,
+    //             categoria
+    //         })
+    //     }
+    // })
     return (
         <section className={styles.secao}>
 

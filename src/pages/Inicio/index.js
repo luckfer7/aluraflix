@@ -2,7 +2,8 @@
 import styles from './Inicio.module.css';
 import Banner from 'components/Banner';
 import Card from 'components/Card';
-import videos from 'json/db.json'
+import videos from 'json/db.json';
+
 
 function Inicio() {
 
