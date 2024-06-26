@@ -30,7 +30,7 @@ function Inicio() {
     return (
         <>
             <Banner />
-            <section className={styles.main}>
+            <section className={styles.section}>
                 
                 {videos.map((video) => {
                         return <Card {...video} key={video.id}/>

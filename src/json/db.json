@@ -1,16 +1,24 @@
 {
   "videos": [
     {
-      "id": "1",
-      "titulo": "O labirinto do Logcat",
-      "imagem": "https://cdn3.gnarususercontent.com.br/2802-react-praticando/img2.png",
-      "link": "https://www.youtube.com/embed/ypvGqZGJBls"
+      "id": "bf81",
+      "titulo": "HEAVY CHEST DAY WITH RONNIE COLEMAN - TIME FOR A BIG PUMP - BUILD THAT MASSIVE CHEST",
+      "valor": "https://www.youtube.com/watch?v=o3uBsnLty8w",
+      "imagem": "",
+      "categoria": ""
     },
     {
-      "id": "448c",
-      "titulo": "duhauhdu",
-      "valor": "nasudus",
-      "imagem": "nsdnuasus",
+      "id": "0465",
+      "titulo": "HEAVY CHEST DAY WITH RONNIE COLEMAN - TIME FOR A BIG PUMP - BUILD THAT MASSIVE CHEST",
+      "valor": "https://www.youtube.com/watch?v=o3uBsnLty8w",
+      "imagem": "",
+      "categoria": ""
+    },
+    {
+      "id": "17a4",
+      "titulo": "Fetch API in 4 Minutes (GET, POST, PUT, DELETE | JSON)",
+      "valor": "https://www.youtube.com/watch?v=XHokFQeQ6Lk",
+      "imagem": "",
       "categoria": "Front-end"
     }
   ]
