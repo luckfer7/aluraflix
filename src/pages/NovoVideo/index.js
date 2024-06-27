@@ -67,7 +67,7 @@ function NovoVideo () {
             <h4>COMPLETE O FORMULARIO PARA CRIAR UM NOVO CARD DE VÍDEO</h4>
 
             <form className={styles.formContainer} onSubmit={Guardar}>
-                <h2>Criar Card</h2>
+                <h2 className={styles.Criar}>Criar Card</h2>
 
                 <div className={styles.containerInput}>
                     <div>

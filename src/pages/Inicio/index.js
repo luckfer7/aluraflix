@@ -3,6 +3,7 @@ import styles from './Inicio.module.css';
 import Banner from 'components/Banner';
 import Card from 'components/Card';
 import { useEffect, useState } from 'react';
+import NovoVideo from 'pages/NovoVideo';
 // import videos from 'json/db.json';
 
 
@@ -26,15 +27,25 @@ function Inicio() {
         fetchData()
         
     }, []);
+
+    const handleDelete = (id) => {
+        // Atualize a lista de vídeos após a exclusão
+        setVideos(videos.filter(video => video.id !== id));
+    };
     
     return (
         <>
             <Banner />
             <section className={styles.section}>
-                
-                {videos.map((video) => {
-                        return <Card {...video} key={video.id}/>
+                <h2 className={styles.videosVideos}>VÍDEOS</h2>
+                <div className={styles.videosContainer}>
+                    
+                    {videos.map((video) => {
+                        return <Card {...video} key={video.id} onDelete={handleDelete}/>
                     })}
+                </div>
+
+                
                 
                 {/* provavelmente, teremos que pegar o valor dos inputs,), colocar no json, e fazer um card com eles. ai exbir os cards aqui. */}
             </section>
