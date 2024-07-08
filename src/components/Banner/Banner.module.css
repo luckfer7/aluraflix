@@ -6,16 +6,20 @@
     background-image: url("./player-fundo.png");
     background-repeat: no-repeat;
     background-size: cover;
-    filter: brightness(0.25) opacity(0.75);    
+    filter: brightness(0.25) opacity(0.75);
+    width: 94.00rem;
+    box-sizing: border-box;
 }
 
 .container {
     display: flex;
     height: 333px;
     gap: 70px;
+    width: 90%;
 }
 
 .containerTexts {
+    width: 50%;
 }
 
 .TitleCategory {
@@ -46,4 +50,8 @@
     font-weight: 300;
     line-height: 21.09px;
 
+}
+
+.imgBanner {
+    width: 50%;
 }

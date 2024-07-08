@@ -6,6 +6,15 @@
     border-bottom: 4px solid rgba(34, 113, 209, 1);
     box-shadow: rgba(34, 113, 209, 0.7);
     padding: 2rem;
+    width: 90.00rem;
+}
+
+nav {
+    width: 18.75rem;
+    height: 2.31rem;
+    display: flex;
+    justify-content: center;
+    gap: 4%;
 }
 
 

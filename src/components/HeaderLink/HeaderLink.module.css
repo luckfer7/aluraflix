@@ -1,10 +1,28 @@
 .link {
-    border: 3px solid;
     border-radius: 10px;
     text-decoration: none;
-    padding: 5px 10px;
-    margin-right: 10px;
-    color: rgba(34, 113, 209, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgba(0, 0, 0, 0.9);
+}
 
+.link:nth-child(1) {
+    border: 3px solid rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1);
+    width: 45%;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 24px;
+    font-family: var(--fonte);
+}
+
+.link:nth-child(2) {
+    width: 45%;
+    color: rgba(34, 113, 209, 1);
+    border: 3px solid rgba(34, 113, 209, 1);
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 24px;
+    font-family: var(--fonte)
 }
