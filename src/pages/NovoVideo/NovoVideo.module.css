@@ -142,3 +142,7 @@ select {
     font-family: var(--fonte);
     color: (165, 165, 165, 1);
 }
+
+@media (max-width: 400px) {
+    
+}
