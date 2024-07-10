@@ -46,8 +46,10 @@ function Inicio() {
                 </div>
 
                 
+                {/* criar um overlay de form com dialog e, provavelmente, traze-lo pra cá (pra depois do section);
+                fazer a requisição put ou post para ligar esse forma ao json;
+                , fazê-lo aparecer quando se clicar botão de editar, e alterar o video. */}
                 
-                {/* provavelmente, teremos que pegar o valor dos inputs,), colocar no json, e fazer um card com eles. ai exbir os cards aqui. */}
             </section>
         </>
         
