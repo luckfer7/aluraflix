@@ -32,6 +32,7 @@ function Inicio() {
         // Atualize a lista de vídeos após a exclusão
         setVideos(videos.filter(video => video.id !== id));
     };
+
     
     return (
         <>
@@ -41,7 +42,7 @@ function Inicio() {
                 <div className={styles.videosContainer}>
                     
                     {videos.map((video) => {
-                        return <Card {...video} key={video.id} onDelete={handleDelete}/>
+                        return <Card {...video} key={video.id} onDelete={handleDelete} />
                     })}
                 </div>
 
@@ -56,4 +57,5 @@ function Inicio() {
     )
 }
 
+// onEdit={handleEdit}
 export default Inicio;
