@@ -1,7 +1,7 @@
 import styles from './Card.module.css'
 
 async function deletarCard (id, onDelete) {
-    fetch(`http://localhost:3001/videos/${id}`, {
+    fetch(`https://my-json-server.typicode.com/luckfer7/aluraflix-api${id}`, {
         method: "DELETE",
         headers: {"Content-Type":"application/json"}
     }).then((response) => {
@@ -18,7 +18,7 @@ async function deletarCard (id, onDelete) {
 }
 
 async function editCard (id, onEdit) {
-    fetch(`http://localhost:3001/videos/${id}`, {
+    fetch(`https://my-json-server.typicode.com/luckfer7/aluraflix-api${id}`, {
         method: "PUT",
         headers: {"Content-Type":"application/json"}
     }).then ((response) => {

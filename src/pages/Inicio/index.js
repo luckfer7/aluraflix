@@ -15,7 +15,7 @@ function Inicio() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const result = await fetch ("http://localhost:3001/videos")
+                const result = await fetch ("https://my-json-server.typicode.com/luckfer7/aluraflix-api")
                 const data = await result.json()
                 setVideos(data)
             }

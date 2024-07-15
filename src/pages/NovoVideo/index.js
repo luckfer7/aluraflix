@@ -18,7 +18,7 @@ function NovoVideo () {
         }
         console.log(paraObj)
 
-        await fetch("http://localhost:3001/videos",{
+        await fetch("https://my-json-server.typicode.com/luckfer7/aluraflix-api",{
             method: "POST",
             headers: {"Content-Type":"application/json"},
             body: JSON.stringify(paraObj)
